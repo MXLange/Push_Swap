@@ -20,5 +20,6 @@ void	ft_ra(t_stack **a)
 	temp->next = (*a);
 	(*a) = (*a)->next;
 	temp->next->next = NULL;
-	ft_putstr_fd("ra\n", 1);
+	//ft_putstr_fd("ra\n", 1);
+	ft_printf("ra\n");
 }
