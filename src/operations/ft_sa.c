@@ -20,5 +20,5 @@ void	ft_sa(t_stack **a)
 	(*a)->next = temp->next;
 	temp->next = (*a);
 	(*a) = temp;
-	ft_printf("sa\n");
+	ft_putstr_fd("sa\n", 1);
 }
