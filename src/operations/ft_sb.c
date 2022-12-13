@@ -20,5 +20,6 @@ void	ft_sb(t_stack **b)
 	(*b)->next = temp->next;
 	temp->next = (*b);
 	(*b) = temp;
-	ft_putstr_fd("sb\n", 1);
+	//ft_putstr_fd("sb\n", 1);
+	ft_printf("sb\n");
 }
