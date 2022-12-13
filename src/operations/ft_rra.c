@@ -22,5 +22,6 @@ void	ft_rra(t_stack **a)
 	temp_last->next = (*a);
 	temp_last_but_one->next = NULL;
 	(*a) = temp_last;
-	ft_putstr_fd("rra\n", 1);
+	//ft_putstr_fd("rra\n", 1);
+	ft_printf("rra\n");
 }
