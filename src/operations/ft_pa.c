@@ -22,5 +22,5 @@ void	ft_pa(t_stack **a, t_stack **b)
 	temp->next = (*a);
 	(*a) = temp;
 	(*b) = temp2;
-	ft_printf("pa\n");
+	ft_putstr_fd("pa\n", 1);
 }
