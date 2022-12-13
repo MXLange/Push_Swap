@@ -20,5 +20,5 @@ void	ft_rb(t_stack **b)
 	temp->next = (*b);
 	(*b) = (*b)->next;
 	temp->next->next = NULL;
-	ft_printf("rb\n");
+	ft_putstr_fd("rb\n", 1);
 }
