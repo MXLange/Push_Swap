@@ -6,7 +6,7 @@
 #    By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/10 13:25:37 by msprenge          #+#    #+#              #
-#    Updated: 2022/12/12 19:33:38 by msprenge         ###   ########.fr        #
+#    Updated: 2022/12/13 13:56:15 by msprenge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 AR = ar rcs
 
-all: $(NAME) $(PROGRAM) clean
+all: $(NAME) $(PROGRAM)
 
 $(NAME): $(OBJ)
 		@make -C libft/
@@ -32,6 +32,7 @@ $(NAME): $(OBJ)
 
 $(PROGRAM): $(OBJ_MAIN)
 			@cc -Wall -Wextra -Werror $(MAIN) $(NAME) -o $(PROGRAM)
+
 
 clean:
 		@make clean -C libft/

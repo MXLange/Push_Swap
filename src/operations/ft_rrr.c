@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:25:59 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/12 18:58:39 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/13 13:06:54 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ void	ft_rrr(t_stack **a, t_stack **b)
 	temp_last->next = (*b);
 	(*b) = temp_last;
 	temp_last_but_one->next = NULL;
-	//ft_putstr_fd("rrr\n", 1);
-	ft_printf("rrr\n");
+	ft_putstr_fd("rrr\n", 1);
+	//ft_printf("rrr\n");
 }

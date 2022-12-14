@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:25:05 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/13 00:38:44 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/14 23:17:20 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@
 # define RB 6
 # define RRA 7
 # define RRB 8
-# define COLUMN_SIZE 10
 
 typedef struct	s_stack
 {
@@ -49,11 +48,15 @@ void	ft_sa(t_stack **a);
 void	ft_sb(t_stack **b);
 void	ft_ss(t_stack **a, t_stack **b);
 
+void	ft_solve(t_stack **a, t_stack **b, int ac, char **av);
+void	ft_push_swap(int ac, char **av);
+
 size_t	ft_arraylen(char **av);
 void	ft_swap(int *a, int *b);
 void	ft_sort_array(int *array, size_t size);
 void	ft_put(t_stack **a, int	*array, size_t size);
 void	ft_get_columns(int **columns, t_stack *a, int column_size);
+int		ft_get_num_of_columns(char **av);
 
 int		ft_atoi_ps(const char *num_ptr, t_stack **stack, int ac, char **av);
 

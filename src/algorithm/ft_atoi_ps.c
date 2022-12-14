@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:49:56 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/13 00:19:04 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/13 01:24:36 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_atoi_ps(const char *num_ptr, t_stack **stack, int ac, char **av)
 	if ((!(num_ptr[i] <= '9' && num_ptr[i] >= '0') && num_ptr[i] != '\0')
 		|| !((number * signal) < 2147483647 && (number * signal) > -2147483648))
 	{
-		ft_putstr_fd("error\n", 2);
+		ft_putstr_fd("Error\n", 2);
 		ft_free_all(ac, &(*av), &(*stack));
 		exit(1);
 	}
