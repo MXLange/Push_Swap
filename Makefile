@@ -6,7 +6,7 @@
 #    By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/10 13:25:37 by msprenge          #+#    #+#              #
-#    Updated: 2022/12/13 13:56:15 by msprenge         ###   ########.fr        #
+#    Updated: 2022/12/22 16:36:27 by msprenge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,3 +43,5 @@ fclean: clean
 		@$(RM) $(NAME) $(PROGRAM)
 
 re: fclean all
+
+.SILENT:
