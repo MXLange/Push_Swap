@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 23:01:30 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/14 23:50:48 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 15:25:10 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ int	ft_get_num_of_columns(char **av)
 		return (200);
 	else if (ft_arraylen(&(*av)) < 5000)
 		return (500);
-	return(1000);
+	return (1000);
 }

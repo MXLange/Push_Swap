@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:30:02 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/12 18:57:33 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 13:38:27 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ void	ft_return_in_order(t_stack **a, t_stack **b)
 		else if (index != 0)
 			ft_putnode_on_top_a(&(*a), index, RRA);
 		ft_pa(&(*a), &(*b));
-		if(index == -1)
+		if (index == -1)
 			ft_ra(&(*a));
 	}
 	medium_point = ft_stack_size((*a)) / 2;
 	index = ft_find_zero_index((*a));
 	if (index <= medium_point && index != 0)
-			ft_putnode_on_top_a_final(&(*a), index, RA);
+		ft_putnode_on_top_a_final(&(*a), index, RA);
 	else if (index != 0)
 		ft_putnode_on_top_a_final(&(*a), index, RRA);
 }

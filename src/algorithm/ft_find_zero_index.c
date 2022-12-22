@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:28:33 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/19 22:46:51 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 13:35:10 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ssize_t	ft_find_zero_index(t_stack *a)
 {
-	t_stack *temp;
+	t_stack	*temp;
 	ssize_t	i;
 
 	i = 0;

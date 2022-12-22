@@ -6,16 +6,15 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:28:15 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/10 13:28:17 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 16:17:34 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "ft_printf.h"
 
 int	type_treat(char input, va_list av)
 {
-	int total_written;
+	int	total_written;
 
 	total_written = 0;
 	if (input == 'c')

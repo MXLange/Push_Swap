@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:28:12 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/12 18:57:07 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 13:37:43 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ ssize_t	ft_find_closer_index(ssize_t index, t_stack **a)
 	t_stack	*temp;
 	ssize_t	current_node;
 	ssize_t	current_difference;
-
 	size_t	i;
 
 	temp = (*a);
@@ -26,7 +25,8 @@ ssize_t	ft_find_closer_index(ssize_t index, t_stack **a)
 	i = 0;
 	while (temp)
 	{
-		if ((ssize_t)temp->index > index && current_difference > ((ssize_t)temp->index - index))
+		if ((ssize_t)temp->index > index
+			&& current_difference > ((ssize_t)temp->index - index))
 		{
 			current_node = i;
 			current_difference = (ssize_t)temp->index - index;

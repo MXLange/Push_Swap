@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:25:05 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/14 23:17:20 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 15:05:18 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@
 # define RRA 7
 # define RRB 8
 
-typedef struct	s_stack
+typedef struct s_stack
 {
 	size_t			index;
 	int				num;
-	struct s_stack *next;
+	struct s_stack	*next;
 }				t_stack;
 
 void	ft_pa(t_stack **a, t_stack **b);
@@ -76,16 +76,18 @@ void	ft_putnode_on_top_a_final(t_stack **a, size_t index, int operation);
 
 void	ft_solve_four_five(t_stack **a, t_stack **b);
 ssize_t	ft_search_index(int begin, int end, t_stack *a);
-void	ft_solve_columns(int *columns, t_stack **a, t_stack **b);
+void	ft_solve_columns(int *columns, t_stack **a,
+			t_stack **b, size_t *rb_count);
 ssize_t	ft_search_bottom_index(int begin, int end, t_stack *a);
 void	ft_return_in_order(t_stack **a, t_stack **b);
-void	ft_reorganize_b(ssize_t bottom_index, ssize_t rb_count, t_stack **a, t_stack **b);
+void	ft_reorganize_b(ssize_t bottom_index, size_t *rb_count,
+			t_stack **a, t_stack **b);
 size_t	ft_push_solve_b(t_stack **a, t_stack **b, int column_mid_point);
 void	ft_putnode_on_top_a_special(t_stack **a, size_t medium_point);
 ssize_t	ft_find_zero_index(t_stack *a);
 ssize_t	ft_find_closer_index(ssize_t index, t_stack **a);
-size_t	ft_decide_top_bottom(size_t top, size_t bottom, size_t medium_point, size_t last_index);
-
+size_t	ft_decide_top_bottom(size_t top, size_t bottom,
+			size_t medium_point, size_t last_index);
 
 void	ft_free_all(int ac, char **av, t_stack **stack);
 void	ft_free_columns(int	**columns);

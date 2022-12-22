@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:30:27 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/12 18:57:35 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 13:39:15 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ ssize_t	ft_search_bottom_index(int begin, int end, t_stack *a)
 	final = -1;
 	while (temp)
 	{
-		if (temp->index >= (size_t)begin && temp->index <= (size_t)end )
+		if (temp->index >= (size_t)begin
+			&& temp->index <= (size_t)end)
 			final = i;
 		i++;
 		temp = temp->next;
 	}
 	return (final);
-
 }

@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 13:48:30 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/13 00:35:57 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 13:36:45 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	ft_stack_size(t_stack *stack)
 
 int	ft_is_sorted(t_stack *stack_a)
 {
-	t_stack *temp;
+	t_stack	*temp;
 
 	temp = stack_a;
 	while (temp->next != NULL)
@@ -70,7 +70,8 @@ void	ft_start_stack(int ac, char **to_free, char **av, t_stack **stack)
 	temp = (*stack);
 	while (av[i])
 	{
-		temp->next = ft_new_node(ft_atoi_ps(av[i++], &(*stack), ac, &(*to_free)));
+		temp->next = ft_new_node(ft_atoi_ps(av[i++],
+					&(*stack), ac, &(*to_free)));
 		temp = temp->next;
 	}
 }

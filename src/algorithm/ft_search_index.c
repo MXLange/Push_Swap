@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:31:18 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/12 18:57:38 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 16:10:02 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ ssize_t	ft_search_index(int begin, int end, t_stack *a)
 
 	temp = a;
 	i = 0;
-	while(temp)
+	while (temp)
 	{
-		if (temp->index >= (size_t)begin && temp->index <= (size_t)end )
+		if (temp->index >= (size_t)begin && temp->index <= (size_t)end)
 			return (i);
 		i++;
 		temp = temp->next;

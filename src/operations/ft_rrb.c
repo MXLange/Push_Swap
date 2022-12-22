@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:26:02 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/13 13:06:49 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 16:15:05 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_rrb(t_stack **b)
 {
-	t_stack *temp_last;
-	t_stack *temp_last_but_one;
+	t_stack	*temp_last;
+	t_stack	*temp_last_but_one;
 
 	temp_last = ft_last_node(*b);
 	temp_last_but_one = ft_last_but_one_node(*b);
@@ -23,5 +23,4 @@ void	ft_rrb(t_stack **b)
 	temp_last_but_one->next = NULL;
 	(*b) = temp_last;
 	ft_putstr_fd("rrb\n", 1);
-	//ft_printf("rrb\n");
 }

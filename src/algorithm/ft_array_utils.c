@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 17:48:07 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/14 23:19:26 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/12/22 15:13:05 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,8 @@ void	ft_get_columns(int **columns, t_stack *a, int column_size)
 		else if (i % 2 == 0)
 			(*columns)[i] = i * (column_size / 2);
 		else
-			(*columns)[i] = (i * (column_size / 2)) + (4 + ((column_size / 10 - 1) * 5));
+			(*columns)[i] = (i * (column_size / 2))
+				+ (4 + ((column_size / 10 - 1) * 5));
 		i++;
 	}
 	(*columns)[i] = ft_stack_size(a) - 1;
