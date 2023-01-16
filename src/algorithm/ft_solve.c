@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 13:44:20 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/22 16:13:37 by msprenge         ###   ########.fr       */
+/*   Updated: 2023/01/16 12:26:24 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ void	ft_solve(t_stack **a, t_stack **b, int ac, char **av)
 	else if (!(ft_is_sorted((*a)))
 		&& (ft_arraylen(&(*av)) == 5 || ft_arraylen(&(*av)) == 4))
 		ft_solve_four_five(&(*a), &(*b));
+	else if (!(ft_is_sorted((*a))) && ft_arraylen(&(*av)) == 500)
+		ft_radix(&(*a), &(*b));
 	else if (!(ft_is_sorted((*a))) && ft_arraylen(&(*av)) > 5)
 	{
 		ft_get_columns(&columns, (*a), column_size);

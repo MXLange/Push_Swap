@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:25:05 by msprenge          #+#    #+#             */
-/*   Updated: 2022/12/22 15:05:18 by msprenge         ###   ########.fr       */
+/*   Updated: 2023/01/16 12:26:55 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,10 @@ void	ft_ss(t_stack **a, t_stack **b);
 void	ft_solve(t_stack **a, t_stack **b, int ac, char **av);
 void	ft_push_swap(int ac, char **av);
 
+void	ft_push_swap_checker(int ac, char **av);
+void	ft_get_instructions(t_stack **a, t_stack **b);
+void	ft_execute_instructions(t_stack **a, t_stack **b, char *instruction);
+
 size_t	ft_arraylen(char **av);
 void	ft_swap(int *a, int *b);
 void	ft_sort_array(int *array, size_t size);
@@ -93,5 +97,9 @@ void	ft_free_all(int ac, char **av, t_stack **stack);
 void	ft_free_columns(int	**columns);
 void	ft_free_av(char **av);
 void	ft_free_stack(t_stack **stack);
+
+void	ft_radix(t_stack **a, t_stack **b);
+int		get_max_bits(int max_number);
+
 
 #endif
